@@ -149,7 +149,7 @@ data.tail()
 # 
 # These segments are determined by dividing the RFM scores into distinct ranges or groups, allowing for a more detailed analysis of customer RFM characteristics. The RFM value segment provides insights into the relative value of customers in terms of recency, frequency, and monetary aspects.
 # 
-# After that we will proceed to create and analyze RFM customer segments, which are broader classifications based on the RFM scores. These segments, such as "Champions," "Potential Loyalists," and "Can't Lose," offer a strategic perspective on customer behavior and characteristics in relation to recency, frequency, and monetary aspects.
+# After that we will proceed to create and analyze RFM customer segments, which are broader classifications based on the RFM scores. These segments, such as "Patrons," "Potential Loyalists," and "Can't Lose," offer a strategic perspective on customer behavior and characteristics in relation to recency, frequency, and monetary aspects.
 # 
 # These segments provide a deeper understanding of customer engagement and loyalty, allowing businesses to tailor their strategies accordingly.
 
@@ -183,7 +183,7 @@ fig_segment_dist.show()
 data['RFM Customer Segments'] = ''
 
 # Assign RFM segments based on the RFM score
-data.loc[data['RFM_Score'] >= 9, 'RFM Customer Segments'] = 'Champions'
+data.loc[data['RFM_Score'] >= 9, 'RFM Customer Segments'] = 'Patrons'
 data.loc[(data['RFM_Score'] >= 6) & (data['RFM_Score'] < 9), 'RFM Customer Segments'] = 'Potential Loyalists'
 data.loc[(data['RFM_Score'] >= 5) & (data['RFM_Score'] < 6), 'RFM Customer Segments'] = 'At Risk Customers'
 data.loc[(data['RFM_Score'] >= 4) & (data['RFM_Score'] < 5), 'RFM Customer Segments'] = "Can Lose"
@@ -212,7 +212,7 @@ fig_treemap_segment_product.show()
 
 
 # Filtering the data to include only the customers in the Champions segment for better visualization purposes
-champions_segment = data[data['RFM Customer Segments'] == 'Champions']
+champions_segment = data[data['RFM Customer Segments'] == 'Patrons']
 
 fig = go.Figure()
 fig.add_trace(go.Box(y=champions_segment['RecencyScore'], name='Recency'))
