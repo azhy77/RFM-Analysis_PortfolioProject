@@ -5,11 +5,11 @@ RFM Analysis is a widely utilized concept in the field of Data Science, particul
 
 By employing RFM Analysis, businesses can evaluate the following aspects of their customers:
 
-Recency: This metric captures the date of a customer's most recent purchase. It provides valuable information about how recently a customer has engaged with the business.
+1.Recency: This metric captures the date of a customer's most recent purchase. It provides valuable information about how recently a customer has engaged with the business.
 
-Frequency: Frequency assesses the rate at which customers make purchases. It sheds light on how often customers engage with the business and make transactions.
+2.Frequency: Frequency assesses the rate at which customers make purchases. It sheds light on how often customers engage with the business and make transactions.
 
-Monetary value: The monetary value metric quantifies the amount spent by customers on their purchases. It helps businesses understand the financial contribution of each customer.
+3.Monetary value: The monetary value metric quantifies the amount spent by customers on their purchases. It helps businesses understand the financial contribution of each customer.
 
 Recency, Frequency, and Monetary value are key indicators that contribute to understanding customer engagement, loyalty, and overall value to a business. Analyzing these metrics empowers businesses to make informed decisions regarding customer segmentation and tailor their marketing strategies accordingly.
 
